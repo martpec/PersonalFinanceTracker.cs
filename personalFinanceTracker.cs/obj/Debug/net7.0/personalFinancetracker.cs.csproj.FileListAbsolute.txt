@@ -1,0 +1,15 @@
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\bin\Debug\net7.0\personalFinancetracker.cs.exe
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\bin\Debug\net7.0\personalFinancetracker.cs.deps.json
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\bin\Debug\net7.0\personalFinancetracker.cs.runtimeconfig.json
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\bin\Debug\net7.0\personalFinancetracker.cs.dll
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\bin\Debug\net7.0\personalFinancetracker.cs.pdb
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\personalFinancetracker.cs.GeneratedMSBuildEditorConfig.editorconfig
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\personalFinancetracker.cs.AssemblyInfoInputs.cache
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\personalFinancetracker.cs.AssemblyInfo.cs
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\personalFinancetracker.cs.csproj.CoreCompileInputs.cache
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\personalFinancetracker.cs.sourcelink.json
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\personalFinancetracker.cs.dll
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\refint\personalFinancetracker.cs.dll
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\personalFinancetracker.cs.pdb
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\personalFinancetracker.cs.genruntimeconfig.cache
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\ref\personalFinancetracker.cs.dll

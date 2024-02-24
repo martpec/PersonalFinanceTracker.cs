@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "1QQOAkLjkXF9GeAA65atXg7FjSc81vQZnbq9sNG2qNkk7MRY4esW5DzvU6qkSOqxUbFXkVpfH7NEnj2bNgY54Q==",
+  "dgSpecHash": "KKFyM3/VMnlgF++u5WNDw+PK7WfNnVvXeUAvu5AXYkC7KqbY7A08W2WJ0glOP9zQiagCo4sf2lHOB+VMpO9R9g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marti\\OneDrive\\Počítač\\Advanced_Object_Oriented_Programming\\aoop.cs\\personalFinancetracker.cs\\personalFinancetracker.cs.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\PersonalFinanceTracker.cs\\personalFinanceTracker.cs\\personalFinancetracker.cs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lillia\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\Lillia\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\Lillia\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\Lillia\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
+  ],
   "logs": []
 }
