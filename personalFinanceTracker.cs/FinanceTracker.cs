@@ -1,3 +1,6 @@
+using System.Text.Json;
+using Newtonsoft;
+using Newtonsoft.Json;
 public class FinanceTracker : IFinance, IFinanceStorage
 {
     private List<Transaction> transactionsList = new List<Transaction>();
@@ -11,7 +14,7 @@ public class FinanceTracker : IFinance, IFinanceStorage
 
         Console.Write("Add description of a transaction: ");
         string? Description = Console.ReadLine();
-        
+
         Console.Write("Add amount of a transaction: ");
         if (!decimal.TryParse(Console.ReadLine(), out decimal amount))
         {
@@ -40,7 +43,6 @@ public class FinanceTracker : IFinance, IFinanceStorage
         Console.WriteLine("1. All transactions ");
         Console.WriteLine("2. Transactions by category ");
         Console.WriteLine("3. Transactions by amount ");
-        Console.WriteLine("4. Transactions by date ");
 
         Console.Write("Choose an option: ");
         string? option = Console.ReadLine();
@@ -73,7 +75,7 @@ public class FinanceTracker : IFinance, IFinanceStorage
                     Console.WriteLine("Date: " + t.Date);
                     Console.WriteLine("ID: " + t.ID);
                     Console.WriteLine("-----------------");
-                    
+
                 }
 
                 break;
@@ -108,25 +110,25 @@ public class FinanceTracker : IFinance, IFinanceStorage
     }
     public decimal GetBalance()
     {
-        foreach(var t in transactionsList)
+        foreach (var t in transactionsList)
         {
-           if(t.Category == Category.Income)
-           {
-               balance += t.Amount;
-           }
-           else
-           {
-               balance -= t.Amount;
-           }
+            if (t.Category == Category.Income)
+            {
+                balance += t.Amount;
+            }
+            else
+            {
+                balance -= t.Amount;
+            }
         }
-        return  balance;
+        return balance;
     }
 
     public decimal GetTotalIncome()
-    {   
-        foreach(var t in transactionsList)
+    {
+        foreach (var t in transactionsList)
         {
-            if(t.Category == Category.Income)
+            if (t.Category == Category.Income)
             {
                 income += t.Amount;
             }
@@ -136,21 +138,22 @@ public class FinanceTracker : IFinance, IFinanceStorage
 
     public decimal GetTotalExpenses()
     {
-        foreach(var t in transactionsList)
+        foreach (var t in transactionsList)
         {
-            if(t.Category != Category.Income)
+            if (t.Category != Category.Income)
             {
                 expenses += t.Amount;
             }
         }
         return expenses;
     }
-    public void SaveFinances()
+    public void SaveTransactions(string filePath)
     {
-        
+        string json = JsonConvert.SerializeObject(transactionsList);
+        File.WriteAllText(filePath, json);
     }
-    public void LoadFinances()
+    public void LoadTransactions(string filePath)
     {
-
+       
     }
 }

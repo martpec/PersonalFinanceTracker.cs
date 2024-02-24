@@ -1,4 +1,5 @@
 ﻿using System;
+using Newtonsoft;
 
 namespace PersonalFinanceTracker
 {
@@ -32,10 +33,10 @@ namespace PersonalFinanceTracker
                         finance.GetFinancialSummary();
                         break;
                     case "4":
-                        finance.SaveFinances();
+                        finance.SaveTransactions("JsonFinanceStorage.json");
                         break;
                     case "5":
-                        finance.LoadFinances();
+                        finance.LoadTransactions("JsonFinanceStorage.json");
                         break;
                     case "6":
                         running = false;

@@ -1,5 +1,5 @@
 public interface IFinanceStorage
     {
-        public void SaveFinances();
-        public void LoadFinances();
+        void SaveTransactions(string filePath);
+        void LoadTransactions(string filePath);
     }

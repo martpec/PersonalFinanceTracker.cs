@@ -13,3 +13,4 @@ E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\refint\p
 E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\personalFinancetracker.cs.pdb
 E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\personalFinancetracker.cs.genruntimeconfig.cache
 E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\ref\personalFinancetracker.cs.dll
+E:\PersonalFinanceTracker.cs\personalFinanceTracker.cs\obj\Debug\net7.0\personalFinancetracker.cs.csproj.AssemblyReference.cache

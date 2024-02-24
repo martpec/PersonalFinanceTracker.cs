@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "KKFyM3/VMnlgF++u5WNDw+PK7WfNnVvXeUAvu5AXYkC7KqbY7A08W2WJ0glOP9zQiagCo4sf2lHOB+VMpO9R9g==",
+  "dgSpecHash": "igUX6JATX/c8BL/WiGqP3j5Zc3kY0E+Ed3VtWWfjydUkPnw53IJ6KpAbLGVsFIZLcketnUvZ1pIx9Gz+EEqTqg==",
   "success": true,
   "projectFilePath": "E:\\PersonalFinanceTracker.cs\\personalFinanceTracker.cs\\personalFinancetracker.cs.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Lillia\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\Lillia\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\Lillia\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Lillia\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
-    "C:\\Users\\Lillia\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
+    "C:\\Users\\Lillia\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512",
+    "C:\\Users\\Lillia\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\Lillia\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512"
   ],
   "logs": []
 }
