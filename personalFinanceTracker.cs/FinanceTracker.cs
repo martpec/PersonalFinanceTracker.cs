@@ -1,7 +1,9 @@
 public class FinanceTracker : IFinance, IFinanceStorage
 {
     private List<Transaction> transactionsList = new List<Transaction>();
-
+    decimal balance = 0;
+    decimal income = 0;
+    decimal expenses = 0;
     public void AddTransaction()
     {
         Transaction transaction;
@@ -9,13 +11,14 @@ public class FinanceTracker : IFinance, IFinanceStorage
 
         Console.Write("Add description of a transaction: ");
         string? Description = Console.ReadLine();
+        
         Console.Write("Add amount of a transaction: ");
         if (!decimal.TryParse(Console.ReadLine(), out decimal amount))
         {
             Console.WriteLine("Invalid amount");
         }
 
-        Console.Write("Add category of a transaction Income/Groceries/Utilities/Fun:");
+        Console.Write("Add category of a transaction Income/Groceries/Utilities/Fun: ");
         string? category = Console.ReadLine();
         if (!Enum.TryParse(category, true, out Category cat))
         {
@@ -33,11 +36,11 @@ public class FinanceTracker : IFinance, IFinanceStorage
     }
     public void ShowTransactions()
     {
-        Console.WriteLine("Display  ");
-        Console.WriteLine("1. All transactions: ");
-        Console.WriteLine("2. Transactions by category: ");
-        Console.WriteLine("3. Transactions by amount: ");
-        Console.WriteLine("4. Transactions by date: ");
+        Console.WriteLine("Display:  ");
+        Console.WriteLine("1. All transactions ");
+        Console.WriteLine("2. Transactions by category ");
+        Console.WriteLine("3. Transactions by amount ");
+        Console.WriteLine("4. Transactions by date ");
 
         Console.Write("Choose an option: ");
         string? option = Console.ReadLine();
@@ -96,21 +99,51 @@ public class FinanceTracker : IFinance, IFinanceStorage
         }
 
     }
+    public void GetFinancialSummary()
+    {
+        Console.WriteLine("Balance: " + GetBalance());
+        Console.WriteLine("Total income: " + GetTotalIncome());
+        Console.WriteLine("Total expenses: " + GetTotalExpenses());
+        Console.WriteLine("-----------------");
+    }
     public decimal GetBalance()
     {
-        Console.WriteLine("Balance: ");
-        return GetTotalIncome() - GetTotalExpenses();
+        foreach(var t in transactionsList)
+        {
+           if(t.Category == Category.Income)
+           {
+               balance += t.Amount;
+           }
+           else
+           {
+               balance -= t.Amount;
+           }
+        }
+        return  balance;
     }
 
     public decimal GetTotalIncome()
-    {
-        return transactionsList.Where(t => t.Amount > 0).Sum(t => t.Amount);
+    {   
+        foreach(var t in transactionsList)
+        {
+            if(t.Category == Category.Income)
+            {
+                income += t.Amount;
+            }
+        }
+        return income;
     }
 
     public decimal GetTotalExpenses()
     {
-        
-        return transactionsList.Where(t => t.Amount < 0).Sum(t => Math.Abs(t.Amount));
+        foreach(var t in transactionsList)
+        {
+            if(t.Category != Category.Income)
+            {
+                expenses += t.Amount;
+            }
+        }
+        return expenses;
     }
     public void SaveFinances()
     {

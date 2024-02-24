@@ -12,12 +12,10 @@ namespace PersonalFinanceTracker
             {
                 Console.WriteLine("1. Add transaction");
                 Console.WriteLine("2. Show transactions");
-                Console.WriteLine("3. Get balance");
-                Console.WriteLine("4. Get total income");
-                Console.WriteLine("5. Get total expenses");
-                Console.WriteLine("6. Save finances");
-                Console.WriteLine("7. Load finances");
-                Console.WriteLine("8. Exit");
+                Console.WriteLine("3. Get Financial summary");
+                Console.WriteLine("4. Save finances");
+                Console.WriteLine("5. Load finances");
+                Console.WriteLine("6. Exit");
 
                 Console.Write("Choose an option: ");
                 string? option = Console.ReadLine();
@@ -31,21 +29,15 @@ namespace PersonalFinanceTracker
                         finance.ShowTransactions();
                         break;
                     case "3":
-                        Console.WriteLine(finance.GetBalance());
+                        finance.GetFinancialSummary();
                         break;
                     case "4":
-                        Console.WriteLine(finance.GetTotalIncome());
-                        break;
-                    case "5":
-                        Console.WriteLine(finance.GetTotalExpenses());
-                        break;
-                    case "6":
                         finance.SaveFinances();
                         break;
-                    case "7":
+                    case "5":
                         finance.LoadFinances();
                         break;
-                    case "8":
+                    case "6":
                         running = false;
                         return;
                     default:
@@ -54,11 +46,6 @@ namespace PersonalFinanceTracker
                 }
             }
 
-            // finance.AddTransaction();
-            // finance.ShowTransactions();
-            // Console.WriteLine(finance.GetBalance());
-            // Console.WriteLine(finance.GetTotalIncome());
-            // Console.WriteLine(finance.GetTotalExpenses());
         }
     }
 }
