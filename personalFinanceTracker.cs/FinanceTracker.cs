@@ -1,7 +1,7 @@
 using System.Text.Json;
 using Newtonsoft;
 using Newtonsoft.Json;
-public class FinanceTracker : IFinance, IFinanceStorage
+public class FinanceTracker : IFinance
 {
     private List<Transaction> transactionsList = new List<Transaction>();
     decimal balance = 0;
@@ -146,14 +146,5 @@ public class FinanceTracker : IFinance, IFinanceStorage
             }
         }
         return expenses;
-    }
-    public void SaveTransactions(string filePath)
-    {
-        string json = JsonConvert.SerializeObject(transactionsList);
-        File.WriteAllText(filePath, json);
-    }
-    public void LoadTransactions(string filePath)
-    {
-       
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\PersonalFinanceTracker.cs\\personalFinanceTracker.cs\\personalFinancetracker.cs.csproj": {}
+    "C:\\Users\\marti\\OneDrive\\Počítač\\Advanced_Object_Oriented_Programming\\aoop.cs\\personalFinanceTracker.cs\\personalFinancetracker.cs.csproj": {}
   },
   "projects": {
-    "E:\\PersonalFinanceTracker.cs\\personalFinanceTracker.cs\\personalFinancetracker.cs.csproj": {
+    "C:\\Users\\marti\\OneDrive\\Počítač\\Advanced_Object_Oriented_Programming\\aoop.cs\\personalFinanceTracker.cs\\personalFinancetracker.cs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PersonalFinanceTracker.cs\\personalFinanceTracker.cs\\personalFinancetracker.cs.csproj",
+        "projectUniqueName": "C:\\Users\\marti\\OneDrive\\Počítač\\Advanced_Object_Oriented_Programming\\aoop.cs\\personalFinanceTracker.cs\\personalFinancetracker.cs.csproj",
         "projectName": "personalFinancetracker.cs",
-        "projectPath": "E:\\PersonalFinanceTracker.cs\\personalFinanceTracker.cs\\personalFinancetracker.cs.csproj",
-        "packagesPath": "C:\\Users\\Lillia\\.nuget\\packages\\",
-        "outputPath": "E:\\PersonalFinanceTracker.cs\\personalFinanceTracker.cs\\obj\\",
+        "projectPath": "C:\\Users\\marti\\OneDrive\\Počítač\\Advanced_Object_Oriented_Programming\\aoop.cs\\personalFinanceTracker.cs\\personalFinancetracker.cs.csproj",
+        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marti\\OneDrive\\Počítač\\Advanced_Object_Oriented_Programming\\aoop.cs\\personalFinanceTracker.cs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lillia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,30 +56,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

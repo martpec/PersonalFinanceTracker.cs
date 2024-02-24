@@ -8,8 +8,7 @@ namespace PersonalFinanceTracker
         static void Main(string[] args)
         {
             FinanceTracker finance = new FinanceTracker();
-            bool running = true;
-            while (running)
+            while (true)
             {
                 Console.WriteLine("1. Add transaction");
                 Console.WriteLine("2. Show transactions");
@@ -33,13 +32,10 @@ namespace PersonalFinanceTracker
                         finance.GetFinancialSummary();
                         break;
                     case "4":
-                        finance.SaveTransactions("JsonFinanceStorage.json");
                         break;
                     case "5":
-                        finance.LoadTransactions("JsonFinanceStorage.json");
                         break;
                     case "6":
-                        running = false;
                         return;
                     default:
                         Console.WriteLine("Invalid option");
