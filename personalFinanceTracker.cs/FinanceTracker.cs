@@ -155,9 +155,9 @@ namespace PersonalFinanceTracker
         {
             return transactionsList;
         }
-        public void SetTransactions(List<Transaction> transactions)
+        public void SetTransactions(List<Transaction>? transactions)
         {
-            this.transactionsList = transactions;
+            this.transactionsList = transactions ?? new List<Transaction>();
         }
     }
 }

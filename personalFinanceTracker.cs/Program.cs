@@ -35,13 +35,13 @@ namespace PersonalFinanceTracker
                         break;
                     case "4":
                         running = false;
-                        return;
+                        break;
                     default:
                         Console.WriteLine("Invalid option");
                         break;
                 }
-                json.SaveTransactions(finance);
             }
+            json.SaveTransactions(finance);
 
         }
     }
