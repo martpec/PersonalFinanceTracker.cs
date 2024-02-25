@@ -8,14 +8,16 @@ namespace PersonalFinanceTracker
         static void Main(string[] args)
         {
             FinanceTracker finance = new FinanceTracker();
-            while (true)
+            JsonFinanceStorage json = new();
+            json.LoadTransactions(finance);
+
+            bool running = true;
+            while (running)
             {
                 Console.WriteLine("1. Add transaction");
                 Console.WriteLine("2. Show transactions");
                 Console.WriteLine("3. Get Financial summary");
-                Console.WriteLine("4. Save finances");
-                Console.WriteLine("5. Load finances");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("4. Exit");
 
                 Console.Write("Choose an option: ");
                 string? option = Console.ReadLine();
@@ -32,15 +34,13 @@ namespace PersonalFinanceTracker
                         finance.GetFinancialSummary();
                         break;
                     case "4":
-                        break;
-                    case "5":
-                        break;
-                    case "6":
+                        running = false;
                         return;
                     default:
                         Console.WriteLine("Invalid option");
                         break;
                 }
+                json.SaveTransactions(finance);
             }
 
         }

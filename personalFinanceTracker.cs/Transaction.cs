@@ -13,11 +13,11 @@ public class Transaction
     public decimal Amount { get; set; }
     public Category Category { get; set; }
 
-    public Transaction(DateTime date, string desc, decimal amount, Category cat)
+    public Transaction(DateTime Date, string Description, decimal Amount, Category Category)
     {
-        Date = date;
-        Description = desc;
-        Amount = amount;
-        Category = cat;
+        this.Date = Date;
+        this.Description = Description;
+        this.Amount = Amount;
+        this.Category = Category;
     }
 }
